@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LabWorkOne</string>
+    <string name="cannot_add_user" />
+</resources>

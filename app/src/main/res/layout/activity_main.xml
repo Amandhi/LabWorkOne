@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AddUserActivity">
+
+    Exercice 1
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/myFirstButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MY FIRST BUTTON"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+          />
+
+        <TextView
+            android:id="@+id/myFirstTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my first TextView"
+            app:layout_constraintTop_toBottomOf="@id/myFirstButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/anotherButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANOTHER BUTTON"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/myFirstTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonWithImage"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="BUTTON WITH AN IMAGE"
+            android:drawableStart="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toBottomOf="@id/anotherButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toBottomOf="@id/buttonWithImage"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
